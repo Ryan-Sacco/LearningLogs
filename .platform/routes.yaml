@@ -1,0 +1,9 @@
+#each route describes how an incomign url will be processed by platform.sh.
+
+"hhtps://{default}/":
+  type: upstream
+  upstream: "ll_project:http"
+
+"https://www.{default}/":
+type: redirect
+to: "https://www.{default}/"
